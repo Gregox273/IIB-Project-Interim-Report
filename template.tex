@@ -1,53 +1,49 @@
 \documentclass[pageno]{jpaper}
 
 %replace XXX with the submission number you are given from the ASPLOS submission site.
-\newcommand{\asplossubmissionnumber}{XXX}
+\newcommand{\asplossubmissionnumber}{14}
 
 \usepackage[normalem]{ulem}
 
 \begin{document}
 
 \title{
-Instructions for Submission to ASPLOS 2018}
+Compiling Physical Invariants to Hardware for a Secure & Private Sensor Interface}
 
-\date{}
+\date{December 2018}
 \maketitle
 
 \thispagestyle{empty}
 
 \begin{abstract}
 
-This document is intended to serve as a sample for submissions to the
-23rd International Conference on Architectural Support for Programming
-Languages and Operating Systems (ASPLOS), 2018.  It provides
-guidelines that authors should follow when submitting papers to the
-conference.
+The aim of this report is to outline the progress made so far with this project, as well as detail the strategy that will lead to completion of the remaining work within the remaining time. Firstly, the project aims and motivation will be described, as the initial project specification has evolved over time to reach its current state (from simply compiling information about physical invariants into HDL to implementing a local differential privacy system that uses this information to account for the mutual privacy loss between related electronic sensors). Next, the most recent proposal for a multi sensor differential privacy system will be detailed, including description and analysis of prototying work in Python and Verilog. Finally, the project timetable will be presented, outlining and justifying remaining tasks and allocated timeframes.
 
 \end{abstract}
 
 \section{Introduction}
 
-This document provides instructions for submitting papers to the 23rd
-International Conference on Architectural Support for Programming
-Languages and Operating Systems (ASPLOS), 2018.  In an effort to
-respect the efforts of reviewers and in the interest of fairness to
-all prospective authors, we request that all submissions to ASPLOS
-2018 follow the formatting and submission rules detailed below.
-Submissions that violate these instructions may not be reviewd, at the
-discretion of the program chair, in order to maintain a review process
-that is fair to all potential authors.
-
-An example submission (formatted using the ASPLOS'18 submission
-format) that contains the submission and formatting guidelines can be
-downloaded from here:
-\href{https://www.asplos2018.org/wp-content/uploads/2017/07/asplos18-template.pdf}{Sample PDF}. The content of
-this document mirrors that of the submission instructions that appear
-on \href{https://www.asplos2018.org/submissions/}{this
-website}, where the paper submission site will be linked online
-shortly.
-
-All questions regarding paper formatting and submission should be directed
-to the program chair.
+% This document provides instructions for submitting papers to the 23rd
+% International Conference on Architectural Support for Programming
+% Languages and Operating Systems (ASPLOS), 2018.  In an effort to
+% respect the efforts of reviewers and in the interest of fairness to
+% all prospective authors, we request that all submissions to ASPLOS
+% 2018 follow the formatting and submission rules detailed below.
+% Submissions that violate these instructions may not be reviewd, at the
+% discretion of the program chair, in order to maintain a review process
+% that is fair to all potential authors.
+%
+% An example submission (formatted using the ASPLOS'18 submission
+% format) that contains the submission and formatting guidelines can be
+% downloaded from here:
+% \href{https://www.asplos2018.org/wp-content/uploads/2017/07/asplos18-template.pdf}{Sample PDF}. The content of
+% this document mirrors that of the submission instructions that appear
+% on \href{https://www.asplos2018.org/submissions/}{this
+% website}, where the paper submission site will be linked online
+% shortly.
+%
+% All questions regarding paper formatting and submission should be directed
+% to the program chair.
 
 \paragraph{Highlights ({\bf note the following})}:
 \begin{itemize}
@@ -274,7 +270,7 @@ only exceptions are (1) workshops without archived proceedings such as in
 the ACM digital library (or where the authors chose not to have their paper
 appear in the archived proceedings), or (2) venues, such as IEEE CAL, where
 there is an explicit policy that such publication does not preclude longer
-conference submissions. These are not considered prior publications. 
+conference submissions. These are not considered prior publications.
 Technical reports and papers posted on public social media sites, Web pages,
 or online repositories, such as arxiv.org, are not considered prior
 publications either. In such exceptional cases, the submitted manuscript may
@@ -341,4 +337,3 @@ This document is modified from the ASPLOS'17 \href{http://novel.ict.ac.cn/ASPLOS
 
 
 \end{document}
-
