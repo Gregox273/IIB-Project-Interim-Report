@@ -8,7 +8,7 @@
 \begin{document}
 
 \title{
-Compiling Physical Invariants to Hardware for a Secure & Private Sensor Interface}
+Compiling Physical Invariants to Hardware for a Secure \& Private Sensor Interface}
 
 \date{December 2018}
 \maketitle
@@ -74,6 +74,33 @@ Given the wide range of topics covered by ASPLOS, every effort will be
 made to find expert reviewers, including providing the ability for
 authors' to suggest additional reviewers.
 
+\section{Project Aims and Motivation}
+\subsection{Background}
+
+The project is based on the Newton description language, designed by Jonathan Lim and Phillip Stanley-Marbell\cite{Newton}. The language provides a way of describing relationships between physical properties e.g. those measured by electronic sensors in an embedded computing system. The starting point for this project was to investigate applications of compiling Newton descriptions into a hardware description language such as Verilog, which could then be synthesised into hardware on a low power iCE40\cite{iCE40} FPGA.
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=\columnwidth]{images/Newton-and-C-Compiler-Interaction.png}
+    \caption{\textit{The Newton language was initially designed to be used with an API called by a host language compiler\cite{Newton}. For this project, the host language 'compiler' will be a custom C program that uses information from a Newton description to modify an existing Verilog template.}}
+    \label{fig:newton_compiler_interaction}
+\end{figure}
+
+\subsection{Motivation \& System Description}
+Simply compiling a Newton description into a hardware description language is not a useful research topic as it does not provide any particular insight, nor do anything particularly new. With this in mind, a new motivation for the project was conceived - the idea of utilising information from a Newton description in a multi-sensor local differential privacy system in order to be able to account for the mutual information between sensor measurements.
+
+\section{Michaelmas Term Progress}
+\subsection{Review of Existing Work}
+\subsection{Prototying}
+\subsection{Verilog}
+\subsection{C Compiler}
+
+\section{Project Timetable}
+\subsection{Summary of Completed Work}
+\subsection{Timetable}
+\subsection{Justification for Changes}
+
+\clearpage
 \section{Paper Preparation Instructions}
 
 \subsection{Paper Formatting}
